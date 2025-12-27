@@ -19,9 +19,6 @@ func buildPath(fileName string) string{
 	if err != nil {
 		log.Fatalf("Error getting current working directory: %v", err)
 	}
-
-	fmt.Println("Current working directory:", cwd)
-
 	
 	fullPath := filepath.Join(cwd, fileName)
 
